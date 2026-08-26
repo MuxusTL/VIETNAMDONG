@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+**/node_modules/
+
+# env files — never commit real secrets
+.env
+!.env.example
+client/.env
+!client/.env.example
+
+# build output
+dist/
+server/public/
+
+# runtime data
+server/data/*.db
+server/data/*.db-journal
+server/data/*.db-wal
+server/data/*.db-shm
+
+# logs
+*.log
+npm-debug.log*
+
+# OS/editor cruft
+.DS_Store
+.vscode/
+.idea/

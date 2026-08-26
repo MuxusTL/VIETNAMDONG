@@ -1,0 +1,25 @@
+{
+  "name": "linknet",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "main.js",
+  "workspaces": [
+    "server",
+    "bot",
+    "client"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev --workspace=server",
+    "dev:bot": "npm run dev --workspace=bot",
+    "dev:client": "npm run dev --workspace=client",
+    "build:client": "npm run build --workspace=client",
+    "typecheck": "npm run typecheck --workspace=server && npm run typecheck --workspace=bot",
+    "test": "npm run test --workspace=server",
+    "start": "node main.js"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "author": "luzanmc"
+}
