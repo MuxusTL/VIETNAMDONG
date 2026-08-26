@@ -1,10 +1,9 @@
 {
   "version": 2,
   "buildCommand": "npm run build:client",
-  "outputDirectory": "server/public",
+  "outputDirectory": "client/dist",
   "functions": {
     "api/index.ts": {
-      "runtime": "nodejs22.x",
       "maxDuration": 60
     }
   },
