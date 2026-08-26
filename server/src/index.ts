@@ -7,7 +7,7 @@ import rateLimit from 'express-rate-limit';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { env } from './config/env.js';
-import './db/database.js';
+// import './db/database.js';
 
 import { authRouter } from './routes/auth.routes.js';
 import { tasksRouter } from './routes/tasks.routes.js';
